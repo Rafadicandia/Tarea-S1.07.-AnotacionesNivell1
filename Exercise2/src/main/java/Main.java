@@ -13,7 +13,8 @@ public class Main {
 
 
         @SuppressWarnings("deprecation")
-        System.out.println(w3.getName()+"'s salary is:" + w3.calculateSalaryPecetas(100)+"peceta");
+        double salaryPecetas = w3.calculateSalaryPecetas(100);
+        System.out.println(w3.getName()+"'s salary is:" + salaryPecetas+"peceta");
 
     }
 }

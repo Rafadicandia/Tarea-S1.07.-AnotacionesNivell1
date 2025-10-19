@@ -2,7 +2,7 @@ public class PresentWorker extends Worker{
 
     private static double gas = 100;
 
-        public final float internetRate=10;
+
         public PresentWorker(String name, String surname, double hourlyRate) {
             super(name, surname, hourlyRate);
         }
@@ -11,9 +11,10 @@ public class PresentWorker extends Worker{
             double salary = hours * hourlyRate + gas;
             return salary;
         }
+
     @Deprecated
     public double calculateSalaryPecetas(double hours){
-        double salary = (hours * hourlyRate + internetRate)*166.386;
+        double salary = (hours * hourlyRate)*166.386;
         return salary;
 
     }
