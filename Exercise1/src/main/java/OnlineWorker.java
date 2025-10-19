@@ -1,11 +1,11 @@
 public class OnlineWorker extends Worker{
     public final float internetRate=10;
-    public OnlineWorker(String name, String surname, float hourlyRate) {
+    public OnlineWorker(String name, String surname, double hourlyRate) {
         super(name, surname, hourlyRate);
     }
     @Override
-    public float calculateSalary(float hours){
-        float salary = hours * hourlyRate + internetRate;
+    public double calculateSalary(double hours){
+        double salary = hours * hourlyRate + internetRate;
         return salary;
     }
 }

@@ -2,9 +2,9 @@ public class Worker {
 
     private String name;
     private String surname;
-    protected float hourlyRate;
+    protected double hourlyRate;
 
-public Worker(String name, String surname, float hourlyRate){
+public Worker(String name, String surname, double hourlyRate){
     if (name==(null)){
         throw new IllegalArgumentException("The name of the product can't be null");
     }
@@ -28,7 +28,7 @@ public Worker(String name, String surname, float hourlyRate){
     this.surname = surname;
     this.hourlyRate = hourlyRate;
 }
-    public float calculateSalary(float hours){
+    public double calculateSalary(double hours){
         float salary = hours * hourlyRate;
         return salary;
 }
