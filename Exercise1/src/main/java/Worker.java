@@ -32,5 +32,7 @@ public Worker(String name, String surname, double hourlyRate){
         double salary = hours * hourlyRate;
         return salary;
 }
-
+public String getName(){
+    return name;
+}
 }
