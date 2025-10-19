@@ -1,4 +1,4 @@
-public abstract class Worker {
+public class Worker {
 
     private String name;
     private String surname;
@@ -28,4 +28,9 @@ public Worker(String name, String surname, float hourlyRate){
     this.surname = surname;
     this.hourlyRate = hourlyRate;
 }
+    public float calculateSalary(float hours){
+        float salary = hours * hourlyRate;
+        return salary;
+}
+
 }
