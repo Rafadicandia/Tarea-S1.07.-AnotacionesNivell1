@@ -8,6 +8,13 @@ public class OnlineWorker extends Worker{
         double salary = hours * hourlyRate + internetRate;
         return salary;
     }
+
+    @Deprecated
+    public double calculateLightCost(double hours, double KWH){
+        double lightCost = hours * KWH;
+        return lightCost;
+
+    }
 }
 
 

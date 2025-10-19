@@ -11,6 +11,12 @@ public class PresentWorker extends Worker{
             double salary = hours * hourlyRate + gas;
             return salary;
         }
+    @Deprecated
+    public double calculateSalaryPecetas(double hours){
+        double salary = (hours * hourlyRate + internetRate)*166.386;
+        return salary;
+
+    }
 
 
 
