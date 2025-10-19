@@ -29,7 +29,7 @@ public Worker(String name, String surname, double hourlyRate){
     this.hourlyRate = hourlyRate;
 }
     public double calculateSalary(double hours){
-        float salary = hours * hourlyRate;
+        double salary = hours * hourlyRate;
         return salary;
 }
 
