@@ -2,7 +2,7 @@ public class Worker {
 
     private String name;
     private String surname;
-    private float hourlyRate;
+    protected float hourlyRate;
 
 public Worker(String name, String surname, float hourlyRate){
     if (name==(null)){

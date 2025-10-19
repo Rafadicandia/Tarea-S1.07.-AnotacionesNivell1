@@ -5,7 +5,7 @@ public class OnlineWorker extends Worker{
     }
     @Override
     public float calculateSalary(float hours){
-        float salary = hours * super.hourlyRate;
+        float salary = hours * hourlyRate + internetRate;
         return salary;
     }
 }
