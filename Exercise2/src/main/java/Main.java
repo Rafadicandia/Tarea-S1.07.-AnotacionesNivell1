@@ -12,9 +12,8 @@ public class Main {
         System.out.println(w3.getName()+"'s salary is:" + w3.calculateSalary(100)+" euro");
 
 
-        @SuppressWarnings("deprecation")
+        @SuppressWarnings("deprecated")
         double salaryPecetas = w3.calculateSalaryPecetas(100);
-        System.out.println(w3.getName()+"'s salary is:" + salaryPecetas+" peceta");
 
         double lightCost = w2.calculateLightCost(100, 0.1);
         System.out.println(w2.getName()+"'s light cost is:" + lightCost+" euro");

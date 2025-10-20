@@ -8,7 +8,7 @@ public class PresentWorker extends Worker{
         }
         @Override
         public double calculateSalary(double hours){
-            double salary = hours * hourlyRate + gas;
+            double salary =  super.calculateSalary(hours)+gas;
             return salary;
         }
 

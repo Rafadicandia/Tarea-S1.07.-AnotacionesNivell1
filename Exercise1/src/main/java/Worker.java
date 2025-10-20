@@ -21,13 +21,14 @@ public Worker(String name, String surname, double hourlyRate){
         throw new IllegalArgumentException("The name of the product can't be empty");
     }
 
-    if (hourlyRate<0){
-        throw new IllegalArgumentException("Hourly rate can't be negative");
+    if (hourlyRate<=0){
+        throw new IllegalArgumentException("Hourly rate can't be negative or zero");
     }
     this.name = name;
     this.surname = surname;
     this.hourlyRate = hourlyRate;
 }
+
     public double calculateSalary(double hours){
         double salary = hours * hourlyRate;
         return salary;

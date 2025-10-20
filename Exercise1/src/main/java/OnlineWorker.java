@@ -5,7 +5,7 @@ public class OnlineWorker extends Worker{
     }
     @Override
     public double calculateSalary(double hours){
-        double salary = hours * hourlyRate + internetRate;
+        double salary =  super.calculateSalary(hours)+internetRate;
         return salary;
     }
 }

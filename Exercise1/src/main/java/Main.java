@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        Worker w1 = new Worker("Jhon", "Jhonson", 40.6);
+        Worker w1 = new Worker("Jhon", "Jhonson", 0);
         OnlineWorker w2 = new OnlineWorker("Samuel", "L. Jackson", 40.6);
         PresentWorker w3 = new PresentWorker("Diego", "De la Vega", 40.6);
 
