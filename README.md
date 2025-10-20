@@ -1,6 +1,24 @@
 
 ## 📄 Description - Exercise Statement
 
+***
+
+## **Exercise 1**
+Create an object hierarchy with three classes: **Worker**, **OnlineWorker**, and **On-siteWorker**.
+
+The **Worker** class has the attributes name, surname, price/hour, and a `calculateSalary()` method that receives the number of hours worked as a parameter and multiplies it by the price/hour. The child classes must override it, using **@Override**.
+
+From the `main()` method of the Main class, make the necessary calls to demonstrate the functionality of the **@Override** annotation.
+
+For **on-site workers**, the method to calculate their salary will receive the number of hours worked per month as a parameter. When calculating the salary, the number of hours worked will be multiplied by the price/hour, plus the value of a static attribute named `gasoline` that we will add to this class.
+
+For **online workers**, the method to calculate their salary will receive the number of hours worked per month as a parameter. When calculating the salary, the number of hours worked will be multiplied by the price/hour, and the price of the flat-rate internet, which will be a constant in the **OnlineWorker** class, will be added to it.
+
+***
+
+## **Exercise 2**
+Add some obsolete (deprecated) methods to the child classes and use the corresponding annotation. Invoke the obsolete methods from an external class, suppressing the "warnings" for being obsolete by using the appropriate annotation.
+
 ## 💻 Used Technologies
 
 **Java**: 24 (OpenJDK)
@@ -22,7 +40,7 @@
 - Clone the Repository:
 
 ```bash
-git clone https://github.com/Rafadicandia/
+git clone https://github.com/Rafadicandia/Tarea-S1.07.-AnotacionesNivell1.git
 ```
 
 - IDE Configuration:
